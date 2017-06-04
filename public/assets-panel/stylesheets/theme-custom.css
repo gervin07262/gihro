@@ -1,0 +1,129 @@
+/* Add here all your CSS customizations */
+.form-group {
+    margin-bottom: 15px !important;
+}
+
+.form-group.reset-form-horizontal {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.list-items .body-sign .panel-sign .panel-body {
+	background: #FFF;
+	border-radius: 5px 0 5px 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	padding: 33px 19px 15px;
+}
+
+.list-items #filters {margin: 0 0 10px 0;}
+
+.list-items #search {float: left}
+
+.list-items .mb-md {margin-bottom: 5px !important;}
+
+.list-items .mb-md .input-sm {width: 86%; margin: 0 0 0 10px; display: inline-block;}
+
+.list-items .btn-success {margin: 0 0 0 10px}
+
+.list-items .body-locked {
+	max-width: none;
+	min-height: 400px;
+	background: none;
+	width: 170px;
+	float: left;
+}
+
+.list-items .body-locked .panel-sign {
+	margin: 0 auto;
+	max-width: 170px;
+	padding-top: 40px;
+}
+
+.list-items .body-locked .current-user {
+	margin-top: 14px;
+	margin-bottom: 35px;
+	width: 98px;
+}
+
+.list-items .body-locked .current-user .user-image {
+	border: 5px solid #0088cc;
+	border-radius: 150px;
+	height: 90px;
+	left: 73%;
+	position: absolute;
+	margin-left: -81px;
+	top: -52px;
+	width: 90px;
+}
+
+.list-items .body-locked .current-user .user-name {
+	font-size: 30px;
+	font-size: 1.5rem;
+	line-height: 36px;
+	line-height: 3.6rem;
+}
+
+.list-items .multipleselect, .list-items .controlsMultipleSelect {width: 100%}
+
+.list-items .inner-toolbar {
+	margin: 0 0 10px 0 !important;
+	position: static !important;
+}
+
+.list-items .content-with-menu {
+	border-top: 110px solid transparent;
+	margin: -107px -35px -46px 16px;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.list-items .checkbox-custom label {
+	font-size: 9px
+}
+
+.lits_items .media-gallery  a {
+	font-size: 9px
+}
+
+.list-items .btn-primary {font-size: 13px}
+
+.list-items .form-horizontal .control-label {text-align: left}
+
+.list-items .col-md-2 { width: 13.66666667%; }
+
+
+#albums_photos_add .form-horizontal .control-label {text-align: left}
+
+#albums_photos_add .fileupload .uneditable-input, #profile .fileupload .uneditable-input{display: none}
+
+#albums_photos_add #thumbails_images img {max-width: 100%; max-height: 158px; width: 386px; height: 151px;}
+
+#albums_photos_add #thumbails_images input {border-radius: 0px}
+
+#profile .fileupload .btn-file {margin: 0 0 0 -14px}
+
+#add-review .content-result {
+	display: inline;
+}
+
+#add-review .separate_icon {margin: 0 0 0 25px}
+
+#add-review .equal_sign_diary {font-size: 20px; font-weight: bold;}
+
+.panel-title.form {
+  padding-left: 15px;
+  margin: 5px 0 5px 0;
+}
+
+
+@media (min-width: 768px) {
+  html.fixed .content-body {
+      margin-left: 0;
+  }
+  html.fixed .page-header {
+    left: 0;
+  }
+  .content-body {
+    padding: 20px;
+  }
+}

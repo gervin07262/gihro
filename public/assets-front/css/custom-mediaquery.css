@@ -1,0 +1,7 @@
+@media (max-width: 767px) {
+  .content-form-login {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
