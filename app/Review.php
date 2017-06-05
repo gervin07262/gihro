@@ -27,20 +27,20 @@ class Review extends Model
   }
 
   public static function getReviewElements ($id) {
-    $review = Review::find($id);
+    $review = self::find($id);
     $breakfast = explode(',', $review->breakfast);
-    $cupBreakFast = $this->getCup($breakfast[0]);
-    $faceBreakFast = $this->getFace($breakfast[1]);
+    $cupBreakFast = self::getCup($breakfast[0]);
+    $faceBreakFast = self::getFace($breakfast[1]);
 
     $lunch = explode(',', $review->lunch);
-    $dishLunch = $this->getDish($lunch[0]);
-    $faceLunch = $this->getFace($lunch[1]);
+    $dishLunch = self::getDish($lunch[0]);
+    $faceLunch = self::getFace($lunch[1]);
 
     $snack = explode(',', $review->snack);
-    $cupSnack = $this->getCup($snack[0]);
-    $faceSnack = $this->getFace($snack[1]);
+    $cupSnack = self::getCup($snack[0]);
+    $faceSnack = self::getFace($snack[1]);
 
-    $faceNap = $this->getFace($review->nap);
+    $faceNap = self::getFace($review->nap);
 
     return  [
               'cupBreakFast' => $cupBreakFast,
@@ -61,7 +61,7 @@ class Review extends Model
    * @param  elemnent of array
    * @return string
    */
-  private function getCup($item) {
+  private static function getCup($item) {
     switch ($item) {
       case '1':
         return 'full-cup';
@@ -80,7 +80,7 @@ class Review extends Model
    * @param  collection  $review
    * @return string
    */
-  private function getFace($breakfast) {
+  private static function getFace($breakfast) {
     switch ($breakfast) {
       case '1':
         return 'face-happy';
@@ -99,7 +99,7 @@ class Review extends Model
    * @param  elemnent of array
    * @return string
    */
-  private function getDish($lunch) {
+  private static function getDish($lunch) {
     switch ($lunch) {
       case '1':
         return 'full-dish';
