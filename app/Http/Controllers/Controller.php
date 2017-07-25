@@ -12,6 +12,7 @@ use File;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    // comment
 
     public function deleteFilePath($request, $identy, $object) {
       if ($request->file()) {
