@@ -16,8 +16,9 @@ class Controller extends BaseController
     protected function deleteFilePath($request, $identy, $object) {
       if ($request->file()) {
         $mimeType = $request->file('path')->getMimeType();
-        if ($mimeType=='image/jpeg' || $mimeType=='image/png' || $mimeType=='image/bmp' || $mimeType=='image/gif' || $mimeType=='image/svg')
+        if ($mimeType=='image/jpeg' || $mimeType=='image/png' || $mimeType=='image/bmp' || $mimeType=='image/gif' || $mimeType=='image/svg') {
             File::delete('images/'.$identy.'/'.$object->path);
+        }
       }
     }
 }
